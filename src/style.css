@@ -29,15 +29,24 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
 }
-
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 .places {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5px;
+  grid-gap: 10px;
 }
+
 .card {
   background: white;
   margin: 30px 0;
+}
+.card-header.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: none;
 }
 .card-body {
   padding: 30px;
@@ -66,15 +75,23 @@ section {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../image/onitsha.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../image/dorset.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: center;
   padding: 250px 0;
 }
-
+.hero {
+  background: black;
+  color: white;
+  padding: 5px 15px;
+  opacity: 0.6;
+  border-color: aliceblue;
+  border-radius: 50px;
+  display: inline-block;
+}
 header h1 {
   font-weight: 700;
   font-size: 96px;
