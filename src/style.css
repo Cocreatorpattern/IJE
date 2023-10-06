@@ -10,7 +10,12 @@ body {
 .text-center {
   text-align: center;
 }
-
+.catalogue {
+  padding: 5px 6px;
+  margin: 80px 320px 60px;
+  display: inline-block;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
 .box {
   display: grid;
   grid-gap: 64px;
@@ -36,7 +41,7 @@ body {
 .places {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 12px;
 }
 
 .card {
@@ -73,7 +78,13 @@ section {
   margin: 0 auto;
   padding: 80px 0;
 }
-
+section.secondary {
+  background: #f8f8f8;
+}
+.bishop {
+  filter: hue-rotate(93deg);
+  border-radius: 8px;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../image/dorset.jpg");
@@ -179,7 +190,7 @@ footer {
       rgba(39, 32, 68, 0.9),
       rgba(39, 32, 68, 0.9)
     ),
-    url("../image/enugu.jpg");
+    url("../image/Portland.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -233,5 +244,11 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+  .card-header.img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
